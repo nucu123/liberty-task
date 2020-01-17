@@ -1,0 +1,27 @@
+.nav {
+  width: 45px;
+  height: 100%;
+  background-color: #242424;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 55px;
+  position: relative;
+  .nav-icon_cont {
+    width: 45px;
+    height: 35px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: grey;
+      border-left: 2px solid red;
+    }
+  }
+  .toggle {
+    position: absolute;
+    bottom: 90px;
+    cursor: pointer;
+  }
+}

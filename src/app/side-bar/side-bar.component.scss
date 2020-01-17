@@ -1,0 +1,71 @@
+.side-bar {
+  width: 225px;
+  height: 100%;
+  position: relative;
+
+  .arrow-left {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+  }
+
+  .side-bar_avatar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .avatar {
+      margin-top: 45px;
+      margin-bottom: 20px;
+    }
+  }
+  .avatar-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .name {
+      color: #000000;
+      font-size: 14px;
+    }
+    .Profession {
+      color: #919191;
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .number {
+      color: #db0011;
+      font-size: 12px;
+    }
+  }
+  .avatar-ul {
+    width: 100%;
+    margin-top: 20px;
+
+    .avatar-li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 35px;
+      font-size: 14px;
+      padding-left: 25px;
+      padding-right: 15px;
+      &:hover {
+        border-left: 1px solid #da0010;
+        background-color: #e3e3e3;
+        color: #da0010;
+        &:hover {
+          .arrow-icon {
+            display: flex;
+          }
+        }
+      }
+      .arrow-icon {
+        display: none;
+      }
+    }
+  }
+}
