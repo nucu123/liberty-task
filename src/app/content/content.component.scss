@@ -1,10 +1,15 @@
 .content {
   width: 100%;
-
   padding-top: 25px;
-  padding-right: 200px;
+  padding-right: 100px;
   padding-left: 30px;
   padding-bottom: 80px;
+
+  @media screen and (max-width: 1366px) {
+    
+    padding-right: 15px;
+    overflow: hidden;
+  }
   .breadcrumb {
     display: flex;
     justify-content: flex-start;
@@ -118,7 +123,7 @@
           display: flex;
           .name-cont {
             .name {
-              padding-bottom: 29px;
+              padding-bottom: 23px;
               color: #828282;
               font-size: 13px;
               &:last-child {
@@ -134,7 +139,7 @@
               font-size: 13px;
               font-weight: bold;
               font-family: BPGNinoMtavruli;
-              width: 360px;
+              width: 100%;
               line-height: 20px;
             }
             .pb-24 {
